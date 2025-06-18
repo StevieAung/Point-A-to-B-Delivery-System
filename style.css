@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    background-color: white;
+}
+
+.bannerL {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    
+}
+.banner .bannerL .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #228B22;
+    text-align: center;
+    margin-left: 40px;
+}
+.banner .bannerL .logo h3{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.bannerR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #228B22;
+}
+.bannerR a{
+    text-decoration: none;
+    color: black;
+    margin-right: 75px;
+    /* font-weight: bold; */
+}
+.bannerR .a1{
+    color: #228B22;
+}
+.bannerR a:hover{
+    color: #228B22;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #d9d9d9;
+}
+.container .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    height: 100%;            /* ensure it fills the grid cell */
+    text-align: start;      /* center text inside */
+}
+.container .right button{
+    width: auto;
+    height: 50px;
+    background-color: #228B22;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+.container .right button:hover{
+    background-color: #1e7e1e;
+}
+.container .right h2 span{
+    color: #228B22;
+}
+.container .right .btn a{
+    text-decoration: none;
+    color: white;
+}
