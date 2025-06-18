@@ -68,8 +68,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION["user_id"] = $user_id;
                 echo "Login successful!";
                 // Redirect or load dashboard here
-                header("Location: home_page.php");
-                exit;
+                header("Location: home_page.php"); // Change to your dashboard page
+                exit();     
             } else {
                 echo "Invalid email or password.";
             }
