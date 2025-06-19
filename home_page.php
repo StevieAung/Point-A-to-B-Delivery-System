@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 // Include database connection
-include 'dbconnect.php'; // Ensure this file contains the correct database connection code
+    include 'Database/dbconnect.php';
 ?>  
 <!DOCTYPE html>
 <html lang="en">
