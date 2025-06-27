@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body class="d-flex justify-content-center align-items-center min-vh-100">
     <div class="container-fluid col-md-4 col-sm-6 col-lg-4">
         <div class="title mb-3">
-            <h1 class="text-center">Login</h1>
+            <h1 class="text-center">Admin Login</h1>
         </div>
-        <form action="login.php" method="POST" class="bg-light p-4 shadow rounded">
+        <form action="admiLlogin.php" method="POST" class="bg-light p-4 shadow rounded">
             <div class="form-group">
                 <label for="email">Email address</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
@@ -25,7 +25,7 @@
                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
             </div>
             <button type="submit" class="btn btn-success">Login</button>
-            <p class="mt-3">Don't have an account? <a href="register.php" class="text-success">Register here</a></p>
+            <p class="mt-3">Don't have admin access? <a href="#" class="text-success">Contact Stevie</a></p>
 
         <?php
         session_start();
@@ -48,7 +48,7 @@
                     $_SESSION["user_id"] = $user_id;
                     $_SESSION["role"] = $role;
                     if ($role === 'admin') { // or use $role_id == 1 if using role_id
-                        header("Location: Admin Dashboard/dashboard.php");
+                        header("Location: dashboard.php");
                     } else {
                         header("Location: home_page.php");
                     }
